@@ -12,6 +12,7 @@ const ContactForm = () => {
    const [displayInputs, setDisplayInputs] = useState(true)
    
    const form = useRef();
+   
    const sendEmail = (e) => {
       e.preventDefault();
       setDisplayInputs(false);
