@@ -1,0 +1,104 @@
+@import "../../../styles/constants.scss";
+
+.container{ 
+   // width:100%;
+   // padding:2rem; 
+   color:white;
+   // margin-bottom:2rem;
+   margin:0;
+   padding:0;
+   right:0;
+   position:fixed;
+   top:1rem;
+   left:0;
+   padding-right:10%;
+   display:flex;
+   flex-direction: row;
+   z-index:200;
+   justify-content: flex-end;
+   align-content: flex-end;
+   align-items:baseline;
+
+
+   :hover{
+      // border-bottom: 1px solid $gold;
+      cursor:pointer;
+   } 
+
+   .link{
+      text-decoration: inherit;
+      background-color: transparent; 
+      margin-left:2rem;
+      font-size:1.1rem;
+      padding:0 0.5rem;
+      border-bottom: 10px solid transparent;
+      color:white;
+      text-decoration: none;
+      color: inherit;
+      a{
+         color:$mainFont;
+         font-size: 1.3rem;
+         text-decoration:none;
+         padding:0 1rem;
+         margin:0;
+         padding:0;
+         color:white;
+         font-weight: 300;
+     }
+
+
+      z-index:10;
+      :hover{
+         border-bottom: 4px solid $darkRed;
+
+      }
+   }
+
+   @media #{$mobile} {
+    display:none;
+   }
+}
+
+.back_to_home{
+   position:fixed;
+   top:1.1rem;
+   left:1.5rem;
+   height:50px;
+   display:flex;
+   flex-direction: row;
+   z-index:3005;
+   color:white;
+   
+:hover{
+   // border-bottom: 1px solid $gold;
+   cursor:pointer;
+} 
+   @media #{$desktop} {
+      padding: 0 10%;
+      left:0.5rem;
+      :hover{
+         // border-bottom: 1px solid $gold;
+         cursor:pointer;
+      } 
+
+    }
+
+   .minilogo_names{
+      font-family: $mainFont;
+      font-size:0.5rem;
+      margin-left:0.5rem;
+      z-index:205;
+      :hover{
+         // border-bottom: 1px solid $gold;
+         cursor:pointer;
+      } 
+      span{
+         font-weight: bold;
+         z-index:205;
+         :hover{
+            // border-bottom: 1px solid $gold;
+            cursor:pointer;
+         } 
+      }
+   }
+}
