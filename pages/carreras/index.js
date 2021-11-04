@@ -51,7 +51,7 @@ const ContactForm = () => {
                            <label for="linkedin_link">{lang == "ESP" ? "Perfil de Linkedin" : "Linkedin Profile"}</label>
                            <input className={s.campo} type="text" name="linkedin_link" id="linkedin_link"/>
                         
-                           <label>{lang=="ESP"?"Mensaje":"Message"}</label>
+                           <label>Mensaje</label>
                            <textarea className={s.campo2} name="message" />
                            <label style={{ marginRight: "1rem" }}>{lang == "ESP" ? "Adjuntar CV" : "Attach CV"}</label>
                            <input style={{ padding: "1rem 0" }} type="file" name="my_file" />
