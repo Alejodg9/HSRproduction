@@ -2,13 +2,14 @@ import React from 'react'
 import ss from './Footer.module.scss'
 import useAppContext from '../../Context/UseAppContext';
 import Link from 'next/link'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 
 export default function Footer() {
     const { lang } = useAppContext();
     return (
         <>
-            <div className={ss.container}>
+            <div >
                 {lang == "ESP"
                     ?
                     <div className={ss.container}>
@@ -19,6 +20,7 @@ export default function Footer() {
                         <div className={ss.link}><Link href="/novedades">         Novedades</Link></div>
                         <div className={ss.link}><Link href="/carreras">          Carreras</Link></div>
                         <div className={ss.link}><Link href="/contacto">          Contacto</Link></div>
+             
                     </div>
                     :
                     <div className={ss.container}>
@@ -29,15 +31,21 @@ export default function Footer() {
                         <div className={ss.link}><Link href="/novedades">         News</Link></div>
                         <div className={ss.link}><Link href="/carreras">          Carrers</Link></div>
                         <div className={ss.link}><Link href="/contacto">          Contact</Link></div>
+                
                     </div>
 
-                }<div className={ss.footer_social_container}>
-                <Link href="https://www.instagram.com">{IGLogo}</Link>
-                <Link href="https://ar.linkedin.com/company/hang-kuchen-sporleder-rodriguez-morales-abogados?trk=public_profile_topcard-current-company">{INLogo}</Link>
-              
-                </div>
+                }
+                <div className={ss.footer_social_container}>
+                  <div className={ss.footer_social_icons}>
 
-                <p>HSR Abogados © 2021</p>
+                  <Link href="https://www.instagram.com">{IGLogo}</Link>
+                  <Link href="https://ar.linkedin.com/company/hang-kuchen-sporleder-rodriguez-morales-abogados?trk=public_profile_topcard-current-company">{INLogo}</Link>
+                
+                </div>
+                <p>HSR Abogados © 2021</p> 
+                </div>
+              
+                
             </div>
 
 
