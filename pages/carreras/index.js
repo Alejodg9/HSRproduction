@@ -48,11 +48,11 @@ const ContactForm = () => {
                            <input className={s.campo} type="text" name="user_name" />
                            <label>Email</label>
                            <input className={s.campo} type="email" name="user_email" />
-                           <label for="linkedin_link">Linkedin</label>
+                           <label for="linkedin_link">{lang == "ESP" ? "Perfil de Linkedin" : "Linkedin Profile"}</label>
                            <input className={s.campo} type="text" name="linkedin_link" id="linkedin_link"/>
                         
-                           <label>Mensaje</label>
-                           <textarea className={s.campo} name="message" />
+                           <label>{lang=="ESP"?"Mensaje":"Message"}</label>
+                           <textarea className={s.campo2} name="message" />
                            <label style={{ marginRight: "1rem" }}>{lang == "ESP" ? "Adjuntar CV" : "Attach CV"}</label>
                            <input style={{ padding: "1rem 0" }} type="file" name="my_file" />
                            <input className={s.enviar} type="submit" value="Send" />
