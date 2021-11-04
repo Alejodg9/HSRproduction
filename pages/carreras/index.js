@@ -28,7 +28,7 @@ const ContactForm = () => {
 
    return (
       <>
-         <HeaderSub titulo={lang == "ESP" ? "CARRERA" : "CARRER"} img="/ofi4.jfif" />
+         <HeaderSub titulo={lang == "ESP" ? "CARRERA" : "CARRER"} img="ofi7.jpeg" />
          <div className={s.general_container}>
 
             <div className={s.title_container}>
