@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 import useAppContext from '../../Context/UseAppContext';
 
 
-export default function Referals() {
+export default function Contact() {
    const { lang } = useAppContext();
 
    const form = useRef();
