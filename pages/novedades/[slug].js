@@ -3,19 +3,19 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { createClient } from "contentful";
 import HeaderSub from "../../components/HeaderSub/HeaderSub";
-import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import useAppContext from '../../Context/UseAppContext';
 import Footer from '../../components/Footer/Footer'
 import ContactPeek from '../../components/ContactPeek/ContactPeek'
 import {
-   LinkedinShareButton,
-   WhatsappShareButton
- } from "react-share";
+	LinkedinShareButton,
+	WhatsappShareButton
+} from "react-share";
 
- import {
-   LinkedinIcon,
-   WhatsappIcon,
- } from "react-share";
+import {
+	LinkedinIcon,
+	WhatsappIcon,
+} from "react-share";
 
 
 const client = createClient({
@@ -27,7 +27,7 @@ const Novedades = ({ noticia }) => {
 
 	const router = useRouter();
 	const slug = router.query.slug;
-   const { lang } = useAppContext();
+	const { lang } = useAppContext();
 
 	return (
 		<>
@@ -40,40 +40,49 @@ const Novedades = ({ noticia }) => {
 				<meta property="og:image" content="/logo.jpg" />
 			</Head>
 
-         <HeaderSub titulo={lang=="ESP"?noticia.fields.titulo:noticia.fields.tituloIngles} img="ofi8.jpeg" />
+			<HeaderSub titulo={lang == "ESP" ? noticia.fields.titulo : noticia.fields.tituloIngles} img="ofi8.jpeg" />
 
 			<div className={ss.container}>
-            {lang == "ESP" ? 
-            <>
-                <div className={ss.autor}>Autor: {noticia.fields.autor}</div>
-            <div className={ss.date}>Fecha: {noticia.sys.updatedAt.substring(0,10)}</div>    
-        
+				{lang == "ESP" ?
+					<>
+						<div className={ss.autor}>Autor: {noticia.fields.autor}</div>
+						<div className={ss.date}>Fecha: {noticia.sys.updatedAt.substring(0, 10)}</div>
 
-				<div className={ss.brief}>{noticia.fields.brief}</div>
 
-				<div className={ss.content}>{documentToReactComponents(noticia.fields.cuerpo)}</div>
-            <div className={ss.share_container}>
-            <span className={ss.share} >Compartir via:</span>
-            <LinkedinShareButton style={{marginLeft:"0.7rem"}}  url={`https://hsrabogados.vercel.app/novedades/${slug}`}>
-               <LinkedinIcon size={32} round={true} />
-            </LinkedinShareButton>
-            <WhatsappShareButton style={{marginLeft:"0.7rem"}} url={`https://hsrabogados.vercel.app/novedades/${slug}`}>
-               <WhatsappIcon size={32} round={true} />
-            </WhatsappShareButton>
-            </div>
-            </>
-            :
-            <>
-            <div className={ss.autor}>Author: {noticia.fields.autor}</div>
-            <div className={ss.date}>Date: {noticia.sys.updatedAt.substring(0,10)}</div>        
-				<div className={ss.brief}>{noticia.fields.briefIngles}</div>
-				<div className={ss.content}>{documentToReactComponents(noticia.fields.cuerpoIngles)}</div>
-            </>
-            }
-     
+						<div className={ss.brief}>{noticia.fields.brief}</div>
+
+						<div className={ss.content}>{documentToReactComponents(noticia.fields.cuerpo)}</div>
+						<div className={ss.share_container}>
+							<span className={ss.share} >Compartir via:</span>
+							<LinkedinShareButton style={{ marginLeft: "0.7rem" }} url={`https://hsrabogados.vercel.app/novedades/${slug}`}>
+								<LinkedinIcon size={32} round={true} />
+							</LinkedinShareButton>
+							<WhatsappShareButton style={{ marginLeft: "0.7rem" }} url={`https://hsrabogados.vercel.app/novedades/${slug}`}>
+								<WhatsappIcon size={32} round={true} />
+							</WhatsappShareButton>
+						</div>
+					</>
+					:
+					<>
+						<div className={ss.autor}>Author: {noticia.fields.autor}</div>
+						<div className={ss.date}>Date: {noticia.sys.updatedAt.substring(0, 10)}</div>
+						<div className={ss.brief}>{noticia.fields.briefIngles}</div>
+						<div className={ss.content}>{documentToReactComponents(noticia.fields.cuerpoIngles)}</div>
+						<div className={ss.share_container}>
+							<span className={ss.share} > {lang == "ESP" ? 'Compartir via' : 'Share'}</span>
+							<LinkedinShareButton style={{ marginLeft: "0.7rem" }} url={`https://hsrabogados.vercel.app/novedades/${slug}`}>
+								<LinkedinIcon size={32} round={true} />
+							</LinkedinShareButton>
+							<WhatsappShareButton style={{ marginLeft: "0.7rem" }} url={`https://hsrabogados.vercel.app/novedades/${slug}`}>
+								<WhatsappIcon size={32} round={true} />
+							</WhatsappShareButton>
+						</div>
+					</>
+				}
+
 			</div>
-         <ContactPeek/>
-         <Footer/>
+			<ContactPeek />
+			<Footer />
 		</>
 	);
 };
@@ -100,9 +109,9 @@ export async function getStaticProps({ params }) {
 	});
 	return {
 		props: { noticia: items[0] },
-      revalidate:1
+		revalidate: 1
 	}
-   
+
 }
 
 
