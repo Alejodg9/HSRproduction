@@ -38,17 +38,18 @@ const Socio = () => {
 				<meta property="og:image" content="/logo.jpg" />
 			</Head>
 
-			<HeaderSub titulo={socio} img="ofi5.jfif" />
+			<HeaderSub titulo={loading?"":partnerData.nameComplete} img="ofi5.jfif" />
 
 			<div className={s.main_container}>
 				<div className={s.image_container}>
 
 					<Image className={s.image} src={socio=="HANG KUCHEN"?'/MHK.png':socio=="SPORLEDER"?'/GS.png':'/SRM.png'} alt="socio" width="350px" height="350px"></Image>
-					<div className={s.contact_icons}>
+					{/* <div className={s.contact_icons}>
+               <div></div>
 						<div>{linkedinLogo}</div>
-						<div>{linkedinLogo}</div>
-						<div>{linkedinLogo}</div>
-					</div>
+                  
+                  <div></div>
+					</div> */}
 				</div>
 				<div className={s.container}>
             <h3>{lang == "ESP" ? "Trayectoria" : "About"}</h3>

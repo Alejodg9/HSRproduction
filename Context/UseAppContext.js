@@ -6,6 +6,7 @@ const useAppContext = () => useContext(AppContext)
 export const AppProvider = ({ children }) => {
 
     const [lang, setLang] = useState("ESP");
+    const [firstLoad, setFirstLoad] = useState(true);
 
     const displayIngles = (value) =>{
         setLang("ENG");
@@ -14,10 +15,13 @@ export const AppProvider = ({ children }) => {
         setLang("ESP");
 	}
 
+   const firstLoadHandler  = () =>{
+      setFirstLoad(false)
+   }
       
     return (
         <AppContext.Provider value={{
-				lang,
+				lang, firstLoad, firstLoadHandler,
                 displayIngles,
                 displayEspañol
             }}>{children}</AppContext.Provider>)

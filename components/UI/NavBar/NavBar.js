@@ -2,7 +2,7 @@ import {useEffect,useState} from 'react'
 import ss from './NavBar.module.scss'
 // import Favicon from './Favicon'
 import Link from 'next/link'
-// import AnchorLink from 'react-anchor-link-smooth-scroll'
+ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import useAppContext from '../../../Context/UseAppContext';
 
@@ -13,8 +13,8 @@ import { useRouter } from "next/router";
 
 const Form = ({text}) => {
 
-   const {lang} = useAppContext();
-
+   const {lang, firstLoad} = useAppContext();
+   const [navbar, setNavbar]=useState(false)
    const router = useRouter();
 
 	const goHome = () => {
@@ -22,26 +22,27 @@ const Form = ({text}) => {
 		router.push(fullPath);
 	};
 
-   // useEffect(() => {
-   //    changeBackground()
-   //    // adding the event when scroll change Logo
-   //    window.addEventListener("scroll", changeBackground)
-   //  })
+    useEffect(() => {
+       changeBackground()
+       // adding the event when scroll change Logo
+       window.addEventListener("scroll", changeBackground)
+     })
 
-   // const changeBackground = () => {
+    const changeBackground = () => {
 
-   //    if (window.scrollY >= 60) {
-   //      setNavbar(true)
+       if (window.scrollY >= 60) {
+         setNavbar(true)
  
-   //    } else {
-   //       setNavbar(false)
-   //    }
-   //  }
+       } else {
+          setNavbar(false)
+       }
+     }
 
    return (
-      <>
-               <div className={ss.back_to_home} onClick={goHome}>
-					<span>{miniLogo}</span>
+			<>
+				<div className={ss.back_to_home} onClick={goHome}>
+					<span>{firstLoad ? "" : navbar ? miniLogo :""}</span>
+
 					{/* <span className={ss.minilogo_names}>
 						<div>HANG KUCHEN </div>
 						<div>SPORDELER <span> &</span> </div>
@@ -49,43 +50,60 @@ const Form = ({text}) => {
 					</span> */}
 				</div>
 
-         {lang=="ESP"
-                ?
-                <div className={ss.container}>
-                      {/* <div className={ss.link}><Link href="/">                  El Estudio</Link></div> */}
-                      <div className={ss.link}><Link href="/institucional">     La Firma</Link></div>
-                      <div className={ss.link}><Link href="/areasDePractica">   Areas de Practica</Link></div>
-                      <div className={ss.link}><Link href="/socios">            Socios</Link></div>
-                      <div className={ss.link}><Link href="/novedades">         Novedades</Link></div>
-                      <div className={ss.link}><Link href="/carreras">          Carrera</Link></div>
-                      <div className={ss.link}><Link href="/contacto">          Contacto</Link></div>
-                  </div>
-                  :
-                  <div className={ss.container}>
-                      {/* <div className={ss.link}><Link href="/">                  Institutional</Link></div> */}
-                      <div className={ss.link}><Link href="/institucional">     The Firm</Link></div>
-                      <div className={ss.link}><Link href="/areasDePractica">   Practice Areas</Link></div>
-                      <div className={ss.link}><Link href="/socios">            Partners</Link></div>
-                      <div className={ss.link}><Link href="/novedades">         News</Link></div>
-                      <div className={ss.link}><Link href="/carreras">          Carrer</Link></div>
-                      <div className={ss.link}><Link href="/contacto">          Contact</Link></div>
-                      </div>
-                } 
+				{lang == "ESP" ? (
+					<div className={ss.container}>
+						{/* <div className={ss.link}><Link href="/">                  El Estudio</Link></div> */}
+						<div className={ss.link}>
+							<Link href="/institucional"> La Firma</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/areasDePractica"> Areas de Practica</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/socios"> Socios</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/novedades"> Novedades</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/carreras"> Carrera</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/contacto"> Contacto</Link>
+						</div>
+					</div>
+				) : (
+					<div className={ss.container}>
+						{/* <div className={ss.link}><Link href="/">                  Institutional</Link></div> */}
+						<div className={ss.link}>
+							<Link href="/institucional"> The Firm</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/areasDePractica"> Practice Areas</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/socios"> Partners</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/novedades"> News</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/carreras"> Career</Link>
+						</div>
+						<div className={ss.link}>
+							<Link href="/contacto"> Contact</Link>
+						</div>
+					</div>
+				)}
 
-
-
-         
-         {/* <div className={ss.link}><Link className={ss.link_text} href="/">                    El Estudio</Link></div>
+				{/* <div className={ss.link}><Link className={ss.link_text} href="/">                    El Estudio</Link></div>
          <div className={ss.link}><Link className={ss.link_text} href="/about">               Nosotros</Link></div>
          <div className={ss.link}><Link className={ss.link_text} href="/blog">                Publicaciones</Link></div>
          <div className={ss.link}><Link className={ss.link_text} href="/contact">              Contacto</Link></div>
          </div>
       */}
-      
-
-        
-      </>
-   );
+			</>
+		);
 }
 
 export default Form;

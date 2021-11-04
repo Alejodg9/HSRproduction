@@ -29,7 +29,7 @@ export default function Footer() {
                         <div className={ss.link}><Link href="/areasDePractica">   Practice Areas</Link></div>
                         <div className={ss.link}><Link href="/socios">            Partners</Link></div>
                         <div className={ss.link}><Link href="/novedades">         News</Link></div>
-                        <div className={ss.link}><Link href="/carreras">          Carrers</Link></div>
+                        <div className={ss.link}><Link href="/carreras">          Career</Link></div>
                         <div className={ss.link}><Link href="/contacto">          Contact</Link></div>
                 
                     </div>

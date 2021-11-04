@@ -9,6 +9,7 @@ import ContactPeek from '../components/ContactPeek/ContactPeek';
 import { createClient } from 'contentful'
 
 
+
 export async function getStaticProps() {
 
 	const client = createClient({
@@ -29,8 +30,10 @@ export async function getStaticProps() {
 export default function Home({noticias}) {
 
 
+
 	return (
 		<>
+    
 			<Header />
 			<LanguageSwitch />
 			<About />

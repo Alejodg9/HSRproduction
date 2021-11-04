@@ -1,158 +1,44 @@
-import React, {useRef} from 'react';
-import ss from './Header.module.scss'
+import s from "./SquareLoader.module.scss";
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-import YouTube from 'react-youtube';
-import { useState, useEffect} from 'react';
-import LoadingOverlay from 'react-loading-overlay-ts';
-import SquareLoader from '../UI/SquareLoader/SquareLoader'
-import useAppContext from "../../Context/UseAppContext";
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
-const Header = () => {
-   const { firstLoad, firstLoadHandler } = useAppContext();
-   const videoParentRef = useRef();
-   const opts = {
-      height: '390',
-      width: '640',
-      playerVars: {
-        // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
-      }
-   }
-
-   const [isActive, setActive] = useState(true)
-   useEffect(() => {
-      const timer = setTimeout(() => {
-        console.log('This will run after 1 second!')
-        setActive(false),
-        firstLoadHandler();
-      }, 2000);
-      return () => clearTimeout(timer);
-    }, []);
-
-   return (
-      <>
-      {firstLoad ?
-      
-      <LoadingOverlay
-      active={isActive}
-      spinner={<SquareLoader />}
-      text=''
-      styles={{
-        overlay: (base) => ({
-          ...base,
-          background: 'rgba(0, 0, 0, 1)'
-        })
-      }}
-      style={{backgroundColor:"red !important"}}
-    >
-
-         <div className={ss.video_container}>     
-               <div className={ss.logo}>
-               {isMobile
-               ?
-               logo4
-               :
-               logoDesktop
-               }
-                        
-            </div>
-
-            <div className={ss.video_overlay}>
-            </div>
-            {/* <iframe width="100%" height="100%" 
-                  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0">
-               {/* </iframe> */}
-             {/* <video autoPlay loop muted className={ss.video} >
-               <source src='./intro20.mp4' type='video/mp4' />
-            </video> */} 
-
-            <div
-      ref={videoParentRef}
-      dangerouslySetInnerHTML={{
-        __html: `
-        <video
-        width="100%"
-        height="100%"
-          loop
-          playsinline
-          muted
-          autoplay
-          style="position:absolute;top:0;left:0;height:100%;object-fit:cover; z-index:1;"
-          preload="metadata"
-          poster="./poster.png"
-        >
-        <source src='./intro20.mp4'type="video/mp4" />
-        </video>`
-      }}
-    />
+const SquareLoader = () => {
 
 
-            {/* <YouTube videoId="deCFaF4TSOk?autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0" opts={opts}  />; */}
-
-            <div className={ss.bounce}>
-           {arrowDown}
+	return (
+      <div className={s.container}>
+      {/* <div className={s.overlay}></div> */}
+         <div className={s.largeSquare}>{largeSquare}</div>
+         <div className={s.smallSquare_container}>
+         <ScrollAnimation
+					animateIn="animate__fadeInLeft"
+					animateOnce={true}
+					duration={1}
+				>
+					<div className={s.arrow}>{smallSquare}</div>
+				</ScrollAnimation>
          </div>
+         
+      </div>
+	);
+};
+
+export default SquareLoader;
 
 
-         </div>
-
-</LoadingOverlay>
-:
-<div className={ss.video_container}>     
-               <div className={ss.logo}>
-               {isMobile
-               ?
-               logo4
-               :
-               logoDesktop
-               }
-                        
-            </div>
-
-            <div className={ss.video_overlay}>
-            </div>
-            {/* <iframe width="100%" height="100%" 
-                  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0">
-               {/* </iframe> */}
-             {/* <video autoPlay loop muted className={ss.video} >
-               <source src='./intro20.mp4' type='video/mp4' />
-            </video> */} 
-
-            <div
-      ref={videoParentRef}
-      dangerouslySetInnerHTML={{
-        __html: `
-        <video
-        width="100%"
-        height="100%"
-          loop
-          playsinline
-          muted
-          autoplay
-          style="position:absolute;top:0;left:0;height:100%;object-fit:cover; z-index:1;"
-          preload="metadata"
-          poster="./poster.png"
-        >
-        <source src='./intro20.mp4'type="video/mp4" />
-        </video>`
-      }}
-    />
+const largeSquare =<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M114 0H140V57H114V0Z" fill="#343434"/>
+<path d="M0 0H26V140H0V0Z" fill="#343434"/>
+<path d="M114 83H140V140H114V83Z" fill="#343434"/>
+<path d="M140 0V26H0V0H140Z" fill="#343434"/>
+<path d="M140 114V140H12V114H140Z" fill="#343434"/>
+</svg>
 
 
-            {/* <YouTube videoId="deCFaF4TSOk?autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0" opts={opts}  />; */}
-
-            <div className={ss.bounce}>
-           {arrowDown}
-         </div>
-
-
-         </div>}
-
-      </>
-   );
-}
-export default Header;
-
+const smallSquare =<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="26" fill="#939090"/>
+</svg>
 
 
 
@@ -311,11 +197,3 @@ const logo4 = <svg width="276" height="76" viewBox="0 0 276 76" fill="none" xmln
 <path d="M60.9374 22.8796L54.1665 16.1154L60.9374 9.35083L67.7081 16.1154L60.9374 22.8796Z" fill="#F9303E"/>
 </svg>
 
-
-const arrowDown =  <div className={ss.mouse_scroll}>
-<div>
-   <span className={`${ss.m_scroll_arrows} ${ss.unu}`}></span>
-   <span className={`${ss.m_scroll_arrows} ${ss.doi}`}></span>
-   {/* <span className={`${ss.m_scroll_arrows} ${ss.trei}`}></span> */}
-</div>
-</div>

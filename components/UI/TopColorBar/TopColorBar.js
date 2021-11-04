@@ -35,7 +35,8 @@ const Form = ({text}) => {
          <>
         
          <div className={s.container} style={{backgroundColor:"rgba(0, 0, 0, 0.637)"}}>
-         {/* <div className={s.back_to_home} onClick={goHome}>
+{/*          
+         <div className={s.back_to_home} onClick={goHome}>
 					<span>{miniLogo}</span>
 					<span className={s.minilogo_names}>
 						<div>HANG KUCHEN </div>

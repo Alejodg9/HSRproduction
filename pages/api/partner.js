@@ -12,6 +12,7 @@ const comments = [
    {
       id: 1,
       name: "HANG KUCHEN",
+      nameComplete: "MANFRED HANG KUCHEN",
       text: [
          "Manfred Hang Kuchen es valorado por sus clientes por su “capacidad para anticiparse a los hechos y mostrar un alto compromiso con las necesidades diarias de sus clientes”.",
          "Manfred es abogado graduado de la Universidad Católica Argentina (UCA), cuenta con una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA) y un Posgrado en Asesoramiento Jurídico de Empresas de la Universidad Católica Argentina (UCA). Su práctica profesional en centra en el derecho comercial, administrativo y resolución de controversias.",
@@ -72,6 +73,7 @@ const comments = [
    {
       id: 1,
       name: "SPORLEDER",
+      nameComplete: "GUILLERMO SPORLEDER",
       text: [
          "Los clientes suelen resaltar de Guillermo Sporleder la “agilidad y flexibilidad para resolver situaciones particulares y complejas”.",
          "Guillermo es abogado egresado de la Universidad de Buenos Aires (UBA), cuenta con un Posgrado de Especialización en Derecho Laboral y Relaciones Internacionales del Trabajo de la Universidad Católica Argentina (UCA) y una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA). ",
@@ -136,6 +138,7 @@ const comments = [
    {
       id: 1,
       name: "RODRIGUEZ MORALES",
+      nameComplete: "SEBASTIAN RODRIGUEZ MORALES",
       text: [
          "“El trabajo de forma cercana y comprometida” así como también su “alto conocimiento sobre cuestiones vinculadas muy específicas vinculadas a tecnología, medios y telecomunicaciones (TMT)”, son características que destacan los clientes de Sebastián Rodríguez Morales.",
          "Sebastián es abogado graduado de la Universidad del Salvador (USAL), cuenta con una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA) y un Posgrado de Economía y Financias de la Universidad Pompeau Fabra (Barcelona, España). Su práctica profesional en centra en el derecho comercial y administrativo, y es el socio del estudio a cargo del departamento de Tecnología, Medios y Telecomunicaciones (TMT).",
