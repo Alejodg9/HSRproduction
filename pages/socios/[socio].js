@@ -51,6 +51,7 @@ const Socio = () => {
 					</div>
 				</div>
 				<div className={s.container}>
+            <h3>{lang == "ESP" ? "Trayectoria" : "About"}</h3>
 					{loading
 						? ""
 						: lang == "ESP"

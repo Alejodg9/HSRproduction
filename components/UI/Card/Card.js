@@ -25,7 +25,7 @@ const Card = ({ title, content, masDetalle, slug, noticias, trim }) => {
 			>
 				<div className={s.news_bookmark}></div>
 				<div className={s.news_title}>{title}</div>
-				<div className={s.news_content}>{trim?trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))):content}...</div>
+				<div className={s.news_content}>{trim?trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))):content}</div>
 				{masDetalle ? (
 					<div className={s.news_detail} onClick={goToNoticia}>
 						{lang=="ESP"? 'MAS DETALLE' : 'SEE MORE'}

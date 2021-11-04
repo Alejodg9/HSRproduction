@@ -31,6 +31,15 @@ const comments = [
          "mhk@hsrabogados.com",
          "+54 (11) 6346-2790"
       ],
+      posicion: [
+         "Hang Kuchen, Sporleder & Rodríguez Morales Abogados",
+         "Socio"
+      ],
+
+      posicionEng: [
+         "Hang Kuchen, Sporleder & Rodríguez Morales Abogados",
+         "Partner"
+      ],
       labo: [
          "Bruchou, Fernández Madero & Lombardi.",
          "Grupo Pegasus",
