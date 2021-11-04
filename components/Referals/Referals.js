@@ -29,9 +29,8 @@ const Carrousel = () => {
          <div className={ss.contentStyle}> 
 						<p className={ss.referencia}>
                   {lang=="ESP"? "El equipo nos propone soluciones practicas e innovadoras en sus\
-							distintas areas de practico. Son muy profesionales, proactivos y\
-							comprometidos. La confianza generada nos permite delegarle asuntos\
-							muy variados y complejos."
+							distintas areas. Son muy profesionales, proactivos y\
+							comprometidos."
                      :
                      "The team proposes practical and innovative solutions in their \
                      different practice areas. They are very professional, proactive and \
