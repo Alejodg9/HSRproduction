@@ -67,7 +67,7 @@ const backgorund = (
 const esp = [
 	"Nosotros",
 
-	"Somos una firma de servicios legales que ofrece asesoramiento de calidad, enfocados especialmente hacia la empresa, y con particular apego por la eficiencia, el profesionalismo y la ética",
+	"Somos una firma de servicios legales que ofrece asesoramiento de calidad, enfocados especialmente hacia la empresa, y con particular apego por la eficiencia, el profesionalismo y la ética.",
 	"Trabajamos para generar valor a través de soluciones prácticas. Aprovechamos los avances tecnológicos sin descuidar el trato personal. Cultivamos el pensamiento colaborativo, que enriquece nuestro servicio.",
 	"En Hang Kuchen, Sporleder & Rodríguez Morales Abogados pretendemos convertirnos en socios de nuestros clientes.",
 
