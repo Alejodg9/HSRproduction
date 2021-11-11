@@ -113,7 +113,7 @@
    .newsletter{
    background-color: none;
    border:1px solid white;
-   width:59%;
+   width:100%;
    
    background: none;
    display:inline-block;
@@ -157,3 +157,27 @@
    }
 }
 
+
+
+.campo{
+   background-color: rgba(255, 255, 255, 0.252);
+   border:2px solid rgb(255, 255, 255);
+   font-size: 0.9rem;
+   font-family:$secondaryFont;
+   @media #{$desktop}{
+      font-size:1.2rem;
+ 
+    }
+}
+
+.enviar{
+   background-color: rgba(71, 59, 59, 0.26);
+   border:2px solid white;
+   color:white;
+   font-size: 0.9rem;
+   font-family:$secondaryFont;
+   @media #{$desktop}{
+      font-size:1.2rem;
+ 
+    }
+}

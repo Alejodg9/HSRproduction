@@ -195,13 +195,33 @@ Debieran encontrar los logos de las cinco empresas en google. Cualquier cosa me 
 🟢9. En la versión en inglés los comentarios están en castellano. 🟢También el “más detalles” está en castellano
 🟢10. Seria carrera y Carrer
 🟢11. La firma / institucional 
-12. newsletter algo en mayuscula
+🟢12. newsletter algo en mayuscula
 🟢13. Fotos socios
-
 🟢13. agrandar teccto cards mobile
 🟢14. contentful
 15. CV - que se mande como contacto
 🟡16. En la sección novedades no es posible compartir las noticias vía redes (ej al querer hacerlo vía WhatsApp te lleva al sitio del diario la nación)
 
+
+/////////////////////////////////////////////////////////////////////////
 17. Brochure
-18. Newsletter que advances
+
+Negirtas HSR
+🟢boton Newsletter
+🟢CV gallego - “…cuenta con…un posgrado de economia y FINANCIAS (cambiar por “finanzas”) de la universidad POMPEAU FABRA (cambiar por “Pompeu Fabra”)
+
+
+BUSqueda google
+🟢1-	Hidraco y Duracell misma frase de “testimonios”
+🟢2-	Aversa y CMC misma frase de “testimonios”. Detallo abajo los correctos.*
+🟢3-	En la bio de Guillermo Sporleder completar la frase “, trabajó en sus inicios en la Justicia Nacional en lo Comercial”.
+🟢4-	En la bio de Sebastián RM cambiar “financias” por “finanzas” y “Pompeau” por “Pompeu”
+5-	En “Areas de Practica” poner el texto de dentro de cada área con márgenes en justificado.
+
+
+
+🟢*TESTIMONIOS CORRECTOS
+🟢[3:10 p. m., 10/11/2021] Gallego: Hola chicos, aca en el ultimo parrafo quedo eliminado el parrafo anteiror respecto a la version en espanol
+🟢[3:11 p. m., 10/11/2021] Gallego: bah el ultimo parrafo no corresponde a mi bio
+🟢[3:13 p. m., 10/11/2021] Gallego: Los ultimos dos parrafos serian: Before founding Hang Kuchen, Sporleder & Rodríguez Morales Abogados, he worked as senior associate at Marval, O'Farrell & Mairal law firm, and previously, he was part of Estudio Moltedo and Ortiz & Asociados. In addition, he served as legal responsible of the media division of Grupo Indalo (C5N, Radio 10, Ideas del Sur, Radio POP, among others).
+🟢He speaks and writes fluently in English.

@@ -28,13 +28,8 @@ const Carrousel = () => {
 
                   <div className={ss.contentStyle}>
                      <p className={ss.referencia}>
-                        {lang == "ESP" ? "El equipo nos propone soluciones practicas e innovadoras en sus\
-							distintas areas. Son muy profesionales, proactivos y\
-							comprometidos."
-                           :
-                           "The team proposes practical and innovative solutions in their \
-                     different practice areas. They are very professional, proactive and \
-                     committed."
+                        {lang == "ESP" ? "Su conocimiento del negocio también facilita nuestro trabajo como empresa internacional, en un mercado tan cambiante como el argentino."
+                           :"Their knowledge of the business also facilitates our work in a market as changing and challenging as Argentina"
                         }
                         <p style={{ fontWeight: "bold", marginTop: "1rem", fontStyle: "normal" }}></p>
                         <span>{duracell}</span>
@@ -43,15 +38,8 @@ const Carrousel = () => {
 
                   <div className={ss.contentStyle}>
                      <p className={ss.referencia}>
-                        {lang == "ESP" ? "Se caracterizan por anticiparse a los hechos y mostrar un alto\
-							compromiso en las necesidades de nuestro día a día. Su\
-							conocimiento del negocio también facilita nuestro trabajo en un\
-							mercado tan cambiante y desafiante como el argentino."
-                           :
-                           "They are characterized by anticipating the facts and showing a high \
-                     commitment to the needs of our day to day. Their know how\
-                   facilitates our work in the argentenean market with the implications of its intrinsic complexity."
-
+                        {lang == "ESP" ? "Se caracterizan por anticiparse a los hechos y mostrar un alto compromiso con las necesidades de nuestro día a día"
+                           :"They are characterized by anticipating the facts and show high commitment in the needs of our day to day"
                         }
 
 
