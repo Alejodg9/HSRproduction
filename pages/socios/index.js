@@ -62,7 +62,7 @@ const partners = [
    {
       name: "SEBASTIAN",
       lastname:"RODRIGUEZ MORALES",
-      bio:"Abogado graduado de la Universidad del Salvador (USAL), cuenta con una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA) y un Posgrado de Economía y Financias de la Universidad Pompeau Fabra (Barcelona, España)...",
+      bio:"Abogado graduado de la Universidad del Salvador (USAL), cuenta con una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA) y un Posgrado de Economía y Finanzas de la Universidad Pompeu Fabra (Barcelona, España)...",
       bioIngles:"Sebastián is a lawyer graduated from the Universidad del Salvador (USAL), has a Master's Degree in Business Law from the University of San Andrés (UdeSA) and a Postgraduate Degree in Economics and Finance from the Pompeu... ",
       img:"/SRM.png"
    },
