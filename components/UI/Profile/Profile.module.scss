@@ -43,6 +43,11 @@ margin: 3rem 10%;
       transform: translateY(-60px);
       padding:1rem;
       font-family: $secondaryFont;
+     
+      @media #{$desktop}{
+         height: 11rem;
+            }
+      
    }
 
    .button_secondary {
@@ -51,9 +56,10 @@ margin: 3rem 10%;
       color:black;
        border:1px solid #011627af;
       padding: 1rem;
-      margin-top:1rem;
-      width:100%;
+      margin-bottom:auto;
+      width:90%;
       z-index:1010;
+      justify-self: flex-end;
       cursor: pointer;
       :hover{
         cursor:pointer;
@@ -61,3 +67,4 @@ margin: 3rem 10%;
    }
 
 }
+
