@@ -9,10 +9,12 @@ import emailjs from 'emailjs-com';
 
 const About = () => {
 	const { lang } = useAppContext();
+	const [displayInputs, setDisplayInputs] = useState(true)
 	const form = useRef();
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+		setDisplayInputs(false);
 		emailjs.sendForm('service_xwdzf6d', 'template_84u28uj', form.current, 'user_GqWB6DWgQTHICnHQEnvCU')
 			.then((result) => {
 				console.log(result.text);
@@ -36,7 +38,7 @@ const About = () => {
 				<div className={s.brief}>{lang == "ESP" ? esp[3] : eng[3]}</div>
 
 				{/* <Link href="/contacto"> */}
-				<Link href="/">
+				<Link href="/contacto">
 					<a className={s.button_primary} style={{ color: "white", margin: "1rem 0" }}>
 						{lang == "ESP" ? esp[4] : eng[4]}
 					</a>
@@ -52,11 +54,20 @@ const About = () => {
 				<a className={s.subscribe} style={{ color: "white" }}>
 					NewsLetter
 				</a>
-				<div className={s.newsletter_container}>
+				<div className={s.newsletter_container}>{
+					
+				displayInputs
+                        ?
+
 					<form className={s.form} ref={form} onSubmit={sendEmail}>
 						<input className={s.campo} type="email" name="user_email" placeholder={lang == "ESP" ? "Ingrese su mail" : "Enter your email"} />
 						<input className={s.enviar} type="submit" value={lang == "ESP" ? "Subscribirme" : "Subscribe"} />
 					</form>
+
+					:
+
+					<h4 className={s.newsletter_send}>Gracias por suscribirte!</h4>
+					}
 				</div>
 
 
