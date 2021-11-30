@@ -39,7 +39,7 @@ const ContactForm = () => {
             <meta property="og:image" content="/logo.jpg" />
          </Head>
 
-         <HeaderSub titulo={lang == "ESP" ? "CARRERA" : "CARRER"} img="ofi7.jpeg" />
+         <HeaderSub titulo={lang == "ESP" ? "CARRERA" : "CAREER"} img="ofi7.jpeg" />
          <div className={s.general_container}>
 
             <div className={s.title_container}>

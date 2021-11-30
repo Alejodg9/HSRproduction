@@ -18,7 +18,7 @@ export default function Footer() {
                         <div className={ss.link}><Link href="/areasDePractica">   Areas de Practica</Link></div>
                         <div className={ss.link}><Link href="/socios">            Socios</Link></div>
                         <div className={ss.link}><Link href="/novedades">         Novedades</Link></div>
-                        <div className={ss.link}><Link href="/carreras">          Carreras</Link></div>
+                        <div className={ss.link}><Link href="/carreras">          Carrera</Link></div>
                         <div className={ss.link}><Link href="/contacto">          Contacto</Link></div>
              
                     </div>
