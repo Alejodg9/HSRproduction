@@ -78,7 +78,7 @@ const Carrousel = () => {
 
 
 
-                 {/*  <div className={ss.contentStyle}>
+                  <div className={ss.contentStyle}>
                      <p className={ss.referencia}>
                         {lang == "ESP" ? "La confianza generada nos permite delegarle asuntos muy variados y complejos"
                            : "The generated trust allow us to delegate them many different and complex issues"}
@@ -86,7 +86,7 @@ const Carrousel = () => {
                            <Image src="/columbia.png" width="150px" height="45px"></Image>
                         </p>
                      </p>
-                  </div> */}
+                  </div>
 
                </Carousel>
             </div>
