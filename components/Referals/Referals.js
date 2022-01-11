@@ -29,7 +29,7 @@ const Carrousel = () => {
                   <div className={ss.contentStyle}>
                      <p className={ss.referencia}>
                         {lang == "ESP" ? "Su conocimiento del negocio también facilita nuestro trabajo como empresa internacional, en un mercado tan cambiante como el argentino."
-                           :"Their knowledge of the business also facilitates our work in a market as changing and challenging as Argentina"
+                           : "Their knowledge of the business also facilitates our work in a market as changing and challenging as Argentina"
                         }
                         <p style={{ fontWeight: "bold", marginTop: "1rem", fontStyle: "normal" }}></p>
                         <span>{duracell}</span>
@@ -39,7 +39,7 @@ const Carrousel = () => {
                   <div className={ss.contentStyle}>
                      <p className={ss.referencia}>
                         {lang == "ESP" ? "Se caracterizan por anticiparse a los hechos y mostrar un alto compromiso con las necesidades de nuestro día a día"
-                           :"They are characterized by anticipating the facts and show high commitment in the needs of our day to day"
+                           : "They are characterized by anticipating the facts and show high commitment in the needs of our day to day"
                         }
 
 
@@ -87,6 +87,25 @@ const Carrousel = () => {
                         </p>
                      </p>
                   </div>
+
+
+
+
+
+
+
+
+                  <div className={ss.contentStyle}>
+                     <p className={ss.referencia}>
+                        {lang == "ESP" ? "Son un equipo de abogados que conocen la dinámica de nuestra empresa, ofreciendo un asesoramiento pragmático que se adapta a nuestra situación."
+                           : "The team knows the dynamics of our company, offering pragamatic assessment adapted to our situation"}
+                        <p style={{ fontWeight: "bold", marginTop: "1rem", fontStyle: "normal" }}>
+                           <Image src="/walmart.png" width="150px" height="45px"></Image>
+                           <Image src="/changomas.png" width="150px" height="45px"></Image>
+                        </p>
+                     </p>
+                  </div>
+
 
                </Carousel>
             </div>
