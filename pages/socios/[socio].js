@@ -20,13 +20,11 @@ const Socio = () => {
 	useEffect(() => {
 		fetch(`/api/partner?socio=${socio}`)
 			.then((response) => response.json())
-
 			.then((data) => {
 				setPartnerData(data);
 				setLoading(false);
 			});
 	}, [lang, socio]);
-
 	return (
 		<>
 			<Head>

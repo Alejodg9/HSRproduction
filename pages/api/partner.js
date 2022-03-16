@@ -140,10 +140,10 @@ const comments = [
       name: "RODRIGUEZ MORALES",
       nameComplete: "SEBASTIAN RODRIGUEZ MORALES",
       text: [
-         "“El trabajo de forma cercana y comprometida” así como también su “alto conocimiento sobre cuestiones vinculadas muy específicas vinculadas a tecnología, medios y telecomunicaciones (TMT)”, son características que destacan los clientes de Sebastián Rodríguez Morales.",
+         "“El trabajo de forma cercana y comprometida” así como también su “alto conocimiento sobre cuestiones muy específicas vinculadas a tecnología, medios y telecomunicaciones (TMT)”, son características que destacan los clientes de Sebastián Rodríguez Morales.",
          "Sebastián es abogado graduado de la Universidad del Salvador (USAL), cuenta con una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA) y un Posgrado de Economía y Finanzas de la Universidad Pompeu Fabra (Barcelona, España). Su práctica profesional en centra en el derecho comercial y administrativo, y es el socio del estudio a cargo del departamento de Tecnología, Medios y Telecomunicaciones (TMT).",
          "Ha asesorado a diversas compañías de tecnología y medios en materia de derecho regulatorio, así como también a start-ups tecnológicas.",
-         "Antes de fundar Hang Kuchen, Sporleder & Rodríguez Morales Abogados, fue asociado senior de Marval, O’ Farrell & Mairal, y previamente, formó parte de los Estudio Moltedo y Ortiz & Asociados. Asimismo, se desempeño como responsable legal de la unidad medios del Grupo Indalo (C5N, Radio 10, Ideas del Sur, Radio POP, entre otras).",
+         "Antes de fundar Hang Kuchen, Sporleder & Rodríguez Morales Abogados, fue asociado senior de Marval, O’ Farrell & Mairal, y previamente, formó parte de los Estudios Moltedo y Ortiz & Asociados. Asimismo, se desempeñó como responsable legal de la unidad de medios del Grupo Indalo (C5N, Radio 10, Ideas del Sur, Radio POP, entre otras).",
          "Habla y escribe fluidamente en idioma inglés.",
       ],
       textEng: [
@@ -185,7 +185,7 @@ const comments = [
       ],
       acad: [
          "Universidad del Salvador",
-         "Universidad Pompeu Fabra",
+         "Universidad Pompeu Fabra (Barcelona, España)",
          "Universidad de San Andrés"
       ],
 
