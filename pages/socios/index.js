@@ -49,7 +49,7 @@ const partners = [
       lastname:"HANG KUCHEN",
       bio:"Abogado graduado de la Universidad Católica Argentina (UCA), cuenta con una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA) y un Posgrado en Asesoramiento Jurídico de Empresas de la Universidad Católica Argentina ...",
       bioIngles:"Manfred is a lawyer graduated from the Universidad Católica Argentina (UCA), has a Master's Degree in Business Law from the University of San Andrés (UdeSA) and a Postgraduate Degree in Business Legal Advice from ... ",
-      img:"/MHK.png"
+      img:"/MHK2.png"
    },
    {
       name: "GUILLERMO",
@@ -57,14 +57,14 @@ const partners = [
       bio:"Abogado egresado de la Universidad de Buenos Aires (UBA), cuenta con un Posgrado de Especialización en Derecho Laboral y Relaciones Internacionales del Trabajo de la Universidad Católica Argentina (UCA) y una Maestría en Derecho ... ",
       bioIngles:"Guillermo is a lawyer graduated from the University of Buenos Aires (UBA), has a Postgraduate Specialization in Labor Law and International Labor Relations from the Argentine Catholic University (UCA) and a  ... ",
       
-      img:"/GS.png"
+      img:"/GS2.png"
    },
    {
       name: "SEBASTIAN",
       lastname:"RODRIGUEZ MORALES",
       bio:"Abogado graduado de la Universidad del Salvador (USAL), cuenta con una Maestría en Derecho Empresario de la Universidad de San Andrés (UdeSA) y un Posgrado de Economía y Finanzas de la Universidad Pompeu Fabra (Barcelona, España)...",
       bioIngles:"Sebastián is a lawyer graduated from the Universidad del Salvador (USAL), has a Master's Degree in Business Law from the University of San Andrés (UdeSA) and a Postgraduate Degree in Economics and Finance from the Pompeu... ",
-      img:"/SRM.png"
+      img:"/SRM2.png"
    },
 
 ]

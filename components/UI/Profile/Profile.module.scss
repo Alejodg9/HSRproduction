@@ -22,7 +22,7 @@ margin: 3rem 10%;
       background-color: $black;
       transform: translateY(-60px);
       padding: 1rem;
-      width:90%;
+      width:100%;
 
       .partner_name {
          font-family: $mainFont;
@@ -37,12 +37,13 @@ margin: 3rem 10%;
    }
 
    .partner_bio {
-      width: 90%;
+      width: 100%;
       color: $black;
       // border:1px solid #011627af;
       transform: translateY(-60px);
       padding:1rem;
       font-family: $secondaryFont;
+      font-size: 1rem;
      
       @media #{$desktop}{
          height: 11rem;
@@ -57,7 +58,7 @@ margin: 3rem 10%;
        border:1px solid #011627af;
       padding: 1rem;
       margin-bottom:auto;
-      width:90%;
+      width:100%;
       z-index:1010;
       justify-self: flex-end;
       cursor: pointer;

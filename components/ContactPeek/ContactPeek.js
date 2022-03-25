@@ -46,7 +46,7 @@ const About = () => {
 
 				{/* <div style={{fontSize:"1.3rem", fontWeight:"bold", marginTop:"2rem"}} className={s.brief}>{lang == "ESP" ? esp[5] : eng[5]}</div> */}
 				{/* <Link href="/brochure"> */}
-				<a className={s.button_primary} style={{ color: "white" }} href="HSR-Brochure.pdf" download> 
+				<a className={s.button_primary} style={{ color: "white" }} href="Brochure-HSR-Abogados.pdf" download> 
 						{lang == "ESP" ? esp[6] : eng[6]}
 					</a>
 				<a className={s.subscribe} style={{ color: "white" }}>
