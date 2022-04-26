@@ -41,7 +41,7 @@ const Socio = () => {
 			<div className={s.main_container}>
 				<div className={s.image_container}>
 
-					<Image className={s.image} src={socio=="HANG KUCHEN"?'/MHK.png':socio=="SPORLEDER"?'/GS.png':'/SRM.png'} alt="socio" width="350px" height="350px"></Image>
+					<Image className={s.image} src={socio=="HANG KUCHEN"?'/MHK2.png':socio=="SPORLEDER"?'/GS2.png':'/SRM2.png'} alt="socio" width="350px" height="350px"></Image>
 					{/* <div className={s.contact_icons}>
                <div></div>
 						<div>{linkedinLogo}</div>
